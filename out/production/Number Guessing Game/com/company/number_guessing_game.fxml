@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.NumberGuessingGameController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="Guess the Number!" style="-fx-font-size: 24px;"/>
+    <Label fx:id="messageLabel" text="Enter a number between 1 and 100"/>
+    <TextField fx:id="guessInput" promptText="Enter your guess"/>
+    <Button text="Guess" onAction="#handleGuess"/>
+    <Label fx:id="attemptsLabel" text="Attempts left: 5"/>
+    <Label fx:id="timeLabel" text="Time remaining: 30s"/>
+</VBox>
+
